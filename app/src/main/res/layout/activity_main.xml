@@ -19,29 +19,40 @@
 
     <TextView
         android:id="@+id/Currency1"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="송금국가 :" />
+        android:text="송금국가 :"
+ />
 
     <TextView
         android:id="@+id/Currency2"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="수취국가 :" />
 
     <TextView
         android:id="@+id/Currency3"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="환율 :" />
 
     <TextView
         android:id="@+id/Currency4"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="조회시간 :" />
 
     <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -58,9 +69,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:gravity="right"
             android:hint="금액 입력"
             android:ems="2"
-            android:inputType="numberPassword" />
+            android:inputType="number" />
 
         <TextView
             android:id="@+id/Currency5_3"
@@ -73,13 +85,18 @@
     <TextView
         android:id="@+id/Currency6"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="120dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="18dp"
         android:text="수취금액은 " />
 
 <NumberPicker
     android:id="@+id/Currency_Picker"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:theme="@style/contryPickerCustom"
+    android:layout_marginTop="60dp"
     />
 
 </LinearLayout>
