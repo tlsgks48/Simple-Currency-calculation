@@ -53,6 +53,7 @@ class MainActivity : AppCompatActivity() {
        // 송금금액을 입력할때마다 계산
         Currency5_2.addTextChangedListener(object : TextWatcher{
             override fun afterTextChanged(s: Editable?) {
+                // 금액을 지울때 다 지우고 생기는 에러 고쳐야댐.
                 Currency6.text = "수취금액은 ${Numf.format(Currency5_2.text.toString().toInt())} 입니다."
 
                 // 수취금액이 0보다 작은 금액이거나 10,000 USD 보다 큰 금액이면 메시지 출력.
