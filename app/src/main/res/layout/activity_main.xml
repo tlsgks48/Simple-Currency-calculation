@@ -40,7 +40,7 @@
         android:layout_marginLeft="56dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="환율 : 0.00 KRW / USD" />
+        android:text="환율 : 0 KRW / USD" />
 
     <TextView
         android:id="@+id/Currency4"
@@ -86,7 +86,7 @@
         android:gravity="center"
         android:layout_gravity="center"
         android:textSize="18dp"
-        android:text="수취금액은 " />
+        android:text="수취금액은 0 KRW 입니다" />
 
 <NumberPicker
     android:id="@+id/Currency_Picker"
