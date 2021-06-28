@@ -125,7 +125,7 @@ class MainActivity : AppCompatActivity() {
     // RetrofitService
     interface RetrofitService{
         @GET("api/live")
-        fun getCurrencyData( // ? 뒤쪽 변수명들.
+        fun getCurrencyData( // ? Api 뒤쪽 변수명들.
             @Query("access_key") access_key: String,
             @Query("currencies ") currencies : String,
             @Query("source  ") source  : String,
